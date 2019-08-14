@@ -37,7 +37,6 @@ public class TestWaitNotify1 implements Runnable {
     }
     @Override
     public void run() {
-
         if (flag) {
             this.waitMethod();
         } else {

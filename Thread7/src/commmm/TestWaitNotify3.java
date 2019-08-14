@@ -13,7 +13,6 @@ public class TestWaitNotify3 implements Runnable {
     public void waitMethod(){
 
         synchronized (object){
-
             System.out.println(Thread.currentThread().getName()+"wait方法开始");
             try {
                 object.wait();
@@ -23,8 +22,6 @@ public class TestWaitNotify3 implements Runnable {
             System.out.print(Thread.currentThread().getName()+"wait方法结束");
 
         }
-
-
     }
 
     public void notifyMethod(){
